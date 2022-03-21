@@ -351,8 +351,8 @@ Let's see how we would implement this as an HTLC in Bitcoin Script. In <<receive
 
 [[received_htlc]]
 .HTLC implemented in Bitcoin Script (BOLT #3)
-[source,text,linenums]
 ====
+[source,text,linenums]
 ----
 # To remote node with revocation key
 OP_DUP OP_HASH160 <RIPEMD160(SHA256(revocationpubkey))> OP_EQUAL
